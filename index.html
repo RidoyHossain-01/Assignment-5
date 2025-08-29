@@ -19,25 +19,26 @@
 </head>
 <body class="font_roboto max-w-[1920px] mx-auto py-5">
      <banner class="">
-          <header class="flex justify-between w-11/12 mx-auto">
+          <header class="md:flex justify-between items-center w-11/12 mx-auto">
                <div class="logo flex">
-                    <img class="w-16 mr-2" src="./assets/logo.png" alt="">
+                    <img class="w-16 h-16 mr-2" src="./assets/logo.png" alt="">
                     <div>
                          <h2 class="text-green-800 text-3xl font-bold ">Emergency <br> Service</h2>
                     </div>
                </div>
-               <div class="dashboard flex justify-end gap-4">
+               <div class="dashboard mt-8 md:mt-0 lg:mt-0 flex justify-end gap-4">
                     
                   
-                   <div class="w-32  bg-green-100 rounded-full flex items-center justify-center mx-auto p-5">
-                        <p class=" bg-green-100 font-bold text-xl mr-2">0</p>
+                   <div class="w-32  bg-green-100 rounded-full flex items-center justify-center mx-auto px-5 py-4">
+                        <p id="heart-count" class=" bg-green-100 font-bold text-xl mr-2">0</p>
                          <img class="w-6" src="./assets/heart.png" alt="">
                     </div>
-                   <div class="w-32  bg-green-100 rounded-full flex items-center justify-center mx-auto p-5">
-                        <p class=" bg-green-100 font-bold text-xl mr-2">100</p>
+                   <div class="w-32  bg-green-100 rounded-full flex items-center justify-center mx-auto px-5 py-4">
+                        <p id="coin-count" class="bg-green-100 font-bold text-xl mr-2">100</p>
                          <img class="w-6 " src="./assets/coin.png" alt="">
                     </div>
-                   <div class="w-32 "><p class=" text-white bg-green-500 rounded-full text-center p-5 font-bold text-xl">2 Copy</p></div>
+
+                   <div class="w-32 "><p class="text-white bg-green-500 rounded-full text-center px-5 py-4 font-bold text-xl"><span id="copy-count">0</span> Copy</p></div>
                     
                </div>
           </header>
@@ -55,226 +56,146 @@
      </banner>
 
      <main>
-          <section class="contact-section w-11/12 mx-auto grid md:grid-cols-12 sm:grid-cols-1 gap-8">
+          <section class="contact-section w-11/12 mx-auto md:grid md:grid-cols-12 sm:grid-cols-1 gap-8">
                <section class="emergency-numbers col-span-9">
                     <div class="all-contacts grid md:grid-cols-3 sm:grid-cols-1 gap-5" >
-                         
-
-                        <div class="card shadow-lg p-9">
-                    <div class="card-header flex justify-between items-center mb-5">
-                         <div class="w-[60px] p-2 bg-[#ffe3e2] rounded-xl">
-                              <img src="./assets/fire-service.png" alt="">
-                         </div>
-                         <i class="fa-regular fa-heart text-3xl"></i>
-                    </div>
-                    <div class="card-info">
-                         <h3 class="text-2xl font-semibold">Fire Service Number</h3>
-                         <p>Fire Service</p>
-                         <br>
-                         <h2 class="text-4xl font-bold">999</h2>
-                         <p>Fire</p>
-                         <br>
-                    </div>
-                     <div class="btn-div flex mx-auto w-full justify-between gap-2">
-                    
-                              <button class="btn w-1/2 "> <i class="fa-regular fa-copy"></i> Copy</button>
-                              <button class="btn hover:bg-green-600 w-1/2 bg-green-700 text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
-                         </div>
-                  </div>
-
-
-                        <div class="card shadow-lg p-9">
-                    <div class="card-header flex justify-between items-center mb-5">
-                         <div class="w-[60px] p-2 bg-[#ffe3e2] rounded-xl">
-                              <img src="./assets/fire-service.png" alt="">
-                         </div>
-                         <i class="fa-regular fa-heart text-3xl"></i>
-                    </div>
-                    <div class="card-info">
-                         <h3 class="text-2xl font-semibold">Fire Service Number</h3>
-                         <p>Fire Service</p>
-                         <br>
-                         <h2 class="text-4xl font-bold">999</h2>
-                         <p>Fire</p>
-                         <br>
-                    </div>
-                     <div class="btn-div flex mx-auto w-full justify-between gap-2">
-                    
-                              <button class="btn w-1/2 "> <i class="fa-regular fa-copy"></i> Copy</button>
-                              <button class="btn hover:bg-green-600 w-1/2 bg-green-700 text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
-                         </div>
-                  </div>
-
-
-                        <div class="card shadow-lg p-9">
-                    <div class="card-header flex justify-between items-center mb-5">
-                         <div class="w-[60px] p-2 bg-[#ffe3e2] rounded-xl">
-                              <img src="./assets/fire-service.png" alt="">
-                         </div>
-                         <i class="fa-regular fa-heart text-3xl"></i>
-                    </div>
-                    <div class="card-info">
-                         <h3 class="text-2xl font-semibold">Fire Service Number</h3>
-                         <p>Fire Service</p>
-                         <br>
-                         <h2 class="text-4xl font-bold">999</h2>
-                         <p>Fire</p>
-                         <br>
-                    </div>
-                     <div class="btn-div flex mx-auto w-full justify-between gap-2">
-                    
-                              <button class="btn w-1/2 "> <i class="fa-regular fa-copy"></i> Copy</button>
-                              <button class="btn hover:bg-green-600 w-1/2 bg-green-700 text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
-                         </div>
-                  </div>
-
-
-                        <div class="card shadow-lg p-9">
-                    <div class="card-header flex justify-between items-center mb-5">
-                         <div class="w-[60px] p-2 bg-[#ffe3e2] rounded-xl">
-                              <img src="./assets/fire-service.png" alt="">
-                         </div>
-                         <i class="fa-regular fa-heart text-3xl"></i>
-                    </div>
-                    <div class="card-info">
-                         <h3 class="text-2xl font-semibold">Fire Service Number</h3>
-                         <p>Fire Service</p>
-                         <br>
-                         <h2 class="text-4xl font-bold">999</h2>
-                         <p>Fire</p>
-                         <br>
-                    </div>
-                     <div class="btn-div flex mx-auto w-full justify-between gap-2">
-                    
-                              <button class="btn w-1/2 "> <i class="fa-regular fa-copy"></i> Copy</button>
-                              <button class="btn hover:bg-green-600 w-1/2 bg-green-700 text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
-                         </div>
-                  </div>
-
-
-                        <div class="card shadow-lg p-9">
-                    <div class="card-header flex justify-between items-center mb-5">
-                         <div class="w-[60px] p-2 bg-[#ffe3e2] rounded-xl">
-                              <img src="./assets/fire-service.png" alt="">
-                         </div>
-                         <i class="fa-regular fa-heart text-3xl"></i>
-                    </div>
-                    <div class="card-info">
-                         <h3 class="text-2xl font-semibold">Fire Service Number</h3>
-                         <p>Fire Service</p>
-                         <br>
-                         <h2 class="text-4xl font-bold">999</h2>
-                         <p>Fire</p>
-                         <br>
-                    </div>
-                     <div class="btn-div flex mx-auto w-full justify-between gap-2">
-                    
-                              <button class="btn w-1/2 "> <i class="fa-regular fa-copy"></i> Copy</button>
-                              <button class="btn hover:bg-green-600 w-1/2 bg-green-700 text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
-                         </div>
-                  </div>
-
-
-                        <div class="card shadow-lg p-9">
-                    <div class="card-header flex justify-between items-center mb-5">
-                         <div class="w-[60px] p-2 bg-[#ffe3e2] rounded-xl">
-                              <img src="./assets/fire-service.png" alt="">
-                         </div>
-                         <i class="fa-regular fa-heart text-3xl"></i>
-                    </div>
-                    <div class="card-info">
-                         <h3 class="text-2xl font-semibold">Fire Service Number</h3>
-                         <p>Fire Service</p>
-                         <br>
-                         <h2 class="text-4xl font-bold">999</h2>
-                         <p>Fire</p>
-                         <br>
-                    </div>
-                     <div class="btn-div flex mx-auto w-full justify-between gap-2">
-                    
-                              <button class="btn w-1/2 "> <i class="fa-regular fa-copy"></i> Copy</button>
-                              <button class="btn hover:bg-green-600 w-1/2 bg-green-700 text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
-                         </div>
-                  </div>
-
-
-                        <div class="card shadow-lg p-9">
-                    <div class="card-header flex justify-between items-center mb-5">
-                         <div class="w-[60px] p-2 bg-[#ffe3e2] rounded-xl">
-                              <img src="./assets/fire-service.png" alt="">
-                         </div>
-                         <i class="fa-regular fa-heart text-3xl"></i>
-                    </div>
-                    <div class="card-info">
-                         <h3 class="text-2xl font-semibold">Fire Service Number</h3>
-                         <p>Fire Service</p>
-                         <br>
-                         <h2 class="text-4xl font-bold">999</h2>
-                         <p>Fire</p>
-                         <br>
-                    </div>
-                     <div class="btn-div flex mx-auto w-full justify-between gap-2">
-                    
-                              <button class="btn w-1/2 "> <i class="fa-regular fa-copy"></i> Copy</button>
-                              <button class="btn hover:bg-green-600 w-1/2 bg-green-700 text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
-                         </div>
-                  </div>
-
-
-                        <div class="card shadow-lg p-9">
-                    <div class="card-header flex justify-between items-center mb-5">
-                         <div class="w-[60px] p-2 bg-[#ffe3e2] rounded-xl">
-                              <img src="./assets/fire-service.png" alt="">
-                         </div>
-                         <i class="fa-regular fa-heart text-3xl"></i>
-                    </div>
-                    <div class="card-info">
-                         <h3 class="text-2xl font-semibold">Fire Service Number</h3>
-                         <p>Fire Service</p>
-                         <br>
-                         <h2 class="text-4xl font-bold">999</h2>
-                         <p>Fire</p>
-                         <br>
-                    </div>
-                     <div class="btn-div flex mx-auto w-full justify-between gap-2">
-                    
-                              <button class="btn w-1/2 "> <i class="fa-regular fa-copy"></i> Copy</button>
-                              <button class="btn hover:bg-green-600 w-1/2 bg-green-700 text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
-                         </div>
-                  </div>
-
-
-                        <div class="card shadow-lg p-9">
-                    <div class="card-header flex justify-between items-center mb-5">
-                         <div class="w-[60px] p-2 bg-[#ffe3e2] rounded-xl">
-                              <img src="./assets/fire-service.png" alt="">
-                         </div>
-                         <i class="fa-regular fa-heart text-3xl"></i>
-                    </div>
-                    <div class="card-info">
-                         <h3 class="text-2xl font-semibold">Fire Service Number</h3>
-                         <p>Fire Service</p>
-                         <br>
-                         <h2 class="text-4xl font-bold">999</h2>
-                         <p>Fire</p>
-                         <br>
-                    </div>
-                     <div class="btn-div flex mx-auto w-full justify-between gap-2">
-                    
-                              <button class="btn w-1/2 "> <i class="fa-regular fa-copy"></i> Copy</button>
-                              <button class="btn hover:bg-green-600 w-1/2 bg-green-700 text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
-                         </div>
-                  </div>
                         
-
+                         
+                         <div>
+                              <div class="card shadow-lg p-9">
+                    <div class="card-header flex justify-between items-center mb-5">
+                         <div class="w-[60px] p-2 bg-[#ffe3e2] rounded-xl">
+                              <img src="./assets/emergency.png" alt="">
+                         </div>
+                         <i class="heart fa-regular fa-heart text-3xl"></i>
+                    </div>
+                    <div class="card-info">
+                         <h3 class="service-name text-2xl font-semibold">National Emergency Number</h3>
+                         <p >National Emergency</p>
+                         <br>
+                         <h2 class="tel-number text-4xl font-bold">999</h2>
+                         <p class="px-5 py-1 rounded-xl bg-gray-200 w-fit mt-2">All</p>
+                         <br>
+                    </div>
+                     <div class="btn-div flex mx-auto w-full justify-between gap-2">
+                    
+                              <button class="copy-btn btn w-1/2 "> <i class="fa-regular fa-copy"></i> Copy</button>
+                              <button class="call-btn btn hover:bg-green-600 w-1/2 bg-green-700 text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
+                         </div>
+                     </div>
+                         </div>
+                         <div>
+                              <div class="card shadow-lg p-9">
+                    <div class="card-header flex justify-between items-center mb-5">
+                         <div class="w-[60px] p-2 bg-[#ffe3e2] rounded-xl">
+                              <img src="./assets/police.png" alt="">
+                         </div>
+                         <i class="heart fa-regular fa-heart text-3xl"></i>
+                    </div>
+                    <div class="card-info">
+                         <h3 class="service-name text-2xl font-semibold">Police Helpline Number</h3>
+                         <p >Police</p>
+                         <br>
+                         <h2 class="tel-number text-4xl font-bold">999</h2>
+                         <p class="px-5 py-1 rounded-xl bg-gray-200 w-fit mt-2">Police</p>
+                         <br>
+                    </div>
+                     <div class="btn-div flex mx-auto w-full justify-between gap-2">
+                    
+                              <button class="copy-btn btn w-1/2 "> <i class="fa-regular fa-copy"></i> Copy</button>
+                              <button class="call-btn btn hover:bg-green-600 w-1/2 bg-green-700 text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
+                         </div>
+                     </div>
+                         </div>
+                         <div>
+                              <div class="card shadow-lg p-9">
+                    <div class="card-header flex justify-between items-center mb-5">
+                         <div class="w-[60px] p-2 bg-[#ffe3e2] rounded-xl">
+                              <img src="./assets/fire-service.png" alt="">
+                         </div>
+                         <i class="heart fa-regular fa-heart text-3xl"></i>
+                    </div>
+                    <div class="card-info">
+                         <h3 class="service-name text-2xl font-semibold">Fire Service Number</h3>
+                         <p >Fire Service</p>
+                         <br>
+                         <h2 class="tel-number text-4xl font-bold">999</h2>
+                         <p class="px-5 py-1 rounded-xl bg-gray-200 w-fit mt-2">Fire</p>
+                         <br>
+                    </div>
+                     <div class="btn-div flex mx-auto w-full justify-between gap-2">
+                    
+                              <button class="copy-btn btn w-1/2 "> <i class="fa-regular fa-copy"></i> Copy</button>
+                              <button class="call-btn btn hover:bg-green-600 w-1/2 bg-green-700 text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
+                         </div>
+                     </div>
+                         </div>
+                         <div>
+                              <div class="card shadow-lg p-9">
+                    <div class="card-header flex justify-between items-center mb-5">
+                         <div class="w-[60px] p-2 bg-[#ffe3e2] rounded-xl">
+                              <img src="./assets/ambulance.png" alt="">
+                         </div>
+                         <i class="heart fa-regular fa-heart text-3xl"></i>
+                    </div>
+                    <div class="card-info">
+                         <h3 class="service-name text-2xl font-semibold">Ambulance Service</h3>
+                         <p >Ambulance</p>
+                         <br>
+                         <h2 class="tel-number text-4xl font-bold">1994-999999</h2>
+                         <p class="px-5 py-1 rounded-xl bg-gray-200 w-fit mt-2">Ambulance</p>
+                         <br>
+                    </div>
+                     <div class="btn-div flex mx-auto w-full justify-between gap-2">
+                    
+                              <button class="copy-btn btn w-1/2 "> <i class="fa-regular fa-copy"></i> Copy</button>
+                              <button class="call-btn btn hover:bg-green-600 w-1/2 bg-green-700 text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
+                         </div>
+                     </div>
+                         </div>
+                         <div>
+                              <div class="card shadow-lg p-9">
+                    <div class="card-header flex justify-between items-center mb-5">
+                         <div class="w-[60px] p-2 bg-[#ffe3e2] rounded-xl">
+                              <img src="./assets/emergency.png" alt="">
+                         </div>
+                         <i class="heart fa-regular fa-heart text-3xl"></i>
+                    </div>
+                    <div class="card-info">
+                         <h3 class="service-name text-2xl font-semibold">Women & Child Helpline</h3>
+                         <p >Women & Child Helpline</p>
+                         <br>
+                         <h2 class="tel-number text-4xl font-bold">109</h2>
+                         <p class="px-5 py-1 rounded-xl bg-gray-200 w-fit mt-2">Help</p>
+                         <br>
+                    </div>
+                     <div class="btn-div flex mx-auto w-full justify-between gap-2">
+                    
+                              <button class="copy-btn btn w-1/2 "> <i class="fa-regular fa-copy"></i> Copy</button>
+                              <button class="call-btn btn hover:bg-green-600 w-1/2 bg-green-700 text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
+                         </div>
+                     </div>
+                         </div>
                   </div> 
                         
                   
                  
                </section>
-               <section class="call-history col-span-3"></section>
+               <section class="call-history md:col-span-3 sm:col-span-1 p-5 pt-10">
+                    <div class="flex justify-between items-center">
+                         <h5 class="text-xl"><i class="fa-solid fa-clock-rotate-left mr-1"></i>Call History</h5>
+                         <button id="clear-btn" class="btn px-7 bg-green-600 text-white rounded-full">Clear</button>
+                    </div>
+
+                    <div id="history-list">
+                    </div>
+
+                    
+               </section>
           </section>
      </main>
      
+
+     <script src="./js/script.js"></script>
 </body>
 </html>
